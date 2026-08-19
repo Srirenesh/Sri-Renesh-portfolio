@@ -4,6 +4,7 @@ import { CustomCursor } from "@/components/site/primitives";
 import {
   About,
   Achievements,
+  Certifications,
   Experience,
   Process,
   Projects,
@@ -41,6 +42,7 @@ function Index() {
       <Skills />
       <Experience />
       <Achievements />
+      <Certifications />
       <TechStack />
       <Process />
       <CtaContact />

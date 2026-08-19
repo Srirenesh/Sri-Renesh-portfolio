@@ -2,6 +2,7 @@ import {
   Award,
   Boxes,
   BrainCircuit,
+  Cloud,
   Cpu,
   Database,
   Github,
@@ -388,4 +389,87 @@ export function Process() {
     </section>
   );
 }
+
+/* ----------------------------- Certifications ----------------------------- */
+
+const CERTIFICATIONS = [
+  {
+    title: "Data Mining and Data Warehousing",
+    issuer: "TCS iON",
+    icon: Database,
+  },
+  {
+    title: "Data Modeling and Data Visualization",
+    issuer: "TCS iON",
+    icon: LineChart,
+  },
+  {
+    title: "Big Data Analytics",
+    issuer: "TCS iON",
+    icon: Cpu,
+  },
+  {
+    title: "Exploratory Data Analysis",
+    issuer: "Infosys Springboard",
+    icon: Search,
+  },
+  {
+    title: "Introduction to Cloud Computing",
+    issuer: "Infosys Springboard",
+    icon: Cloud,
+  },
+  {
+    title: "Natural Language Processing for Developers",
+    issuer: "Infosys",
+    icon: BrainCircuit,
+  },
+  {
+    title: "SQL and Relational Database",
+    issuer: "IBM",
+    icon: ServerCog,
+  },
+  {
+    title: "Data Analytics & Job Simulation",
+    issuer: "Accenture",
+    icon: Workflow,
+  },
+  {
+    title: "Certified Python Associate (CPA)",
+    issuer: "Accredion.org",
+    icon: Award,
+  },
+];
+
+export function Certifications() {
+  return (
+    <section id="certifications" className="relative mx-auto max-w-6xl px-4 py-28 sm:px-8">
+      <SectionHeading
+        eyebrow="Certifications"
+        title={
+          <>
+            Professional <span className="text-gradient">credentials.</span>
+          </>
+        }
+      />
+      <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {CERTIFICATIONS.map((c, i) => (
+          <Reveal key={c.title} delay={i * 0.05}>
+            <div className="glass-card h-full rounded-3xl p-7 flex flex-col justify-between">
+              <div>
+                <span className="grid h-11 w-11 place-items-center rounded-2xl bg-copper-gradient text-primary-foreground">
+                  <c.icon className="h-5 w-5" />
+                </span>
+                <h3 className="mt-6 text-base font-semibold leading-snug">{c.title}</h3>
+              </div>
+              <p className="mt-4 text-xs uppercase tracking-widest text-muted-foreground font-condensed">
+                {c.issuer}
+              </p>
+            </div>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 

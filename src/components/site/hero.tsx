@@ -15,6 +15,7 @@ const NAV = [
   ["Work", "#work"],
   ["Skills", "#skills"],
   ["Experience", "#experience"],
+  ["Certifications", "#certifications"],
   ["Process", "#process"],
   ["Contact", "#contact"],
 ] as const;
