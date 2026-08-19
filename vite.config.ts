@@ -12,4 +12,10 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  // Use Vite's native tsconfig paths resolution instead of the plugin
+  vite: {
+    resolve: {
+      tsconfigPaths: true,
+    },
+  },
 });

@@ -136,8 +136,7 @@ export function Hero() {
             transition={{ duration: 0.7 }}
             className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs tracking-widest text-muted-foreground"
           >
-            <Sparkles className="h-3.5 w-3.5 text-primary" />
-            AVAILABLE FOR DATA SCIENCE & ANALYTICS ROLES — 2026
+
 
           </motion.span>
 
