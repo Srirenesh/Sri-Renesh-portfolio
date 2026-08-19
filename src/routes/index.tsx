@@ -13,7 +13,7 @@ import {
 } from "@/components/site/sections";
 import { CtaContact, Footer } from "@/components/site/contact";
 
-const TITLE = "Sri Renesh — Data Scientist, Data Analyst & Developer";
+const TITLE = "Sri Renesh — Portfolio";
 const DESC =
   "Portfolio of Sri Renesh: data scientist and data analyst building machine learning, analytics and web-based data experiences.";
 
